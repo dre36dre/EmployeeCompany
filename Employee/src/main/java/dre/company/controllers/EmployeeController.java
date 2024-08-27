@@ -1,4 +1,4 @@
-package dre.company.repositories;
+package dre.company.controllers;
 
 import java.util.List;
 
@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import dre.company.entities.Employee;
+import dre.company.repositories.EmployeeRepository;
 
 @RestController
 @RequestMapping(value="/employees")
 public class EmployeeController {
 
-	
 	@Autowired
 	private EmployeeRepository repository;
 	
